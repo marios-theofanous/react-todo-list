@@ -1,0 +1,25 @@
+.todo-item-container {
+  display: grid;
+  grid-template-areas: "text complete delete";
+  grid-template-columns: 99999fr 1fr 1fr;
+}
+
+.todo-item-text {
+  grid-area: text;
+  transition: transform .2s ease-in-out;
+  font-size: x-large;
+}
+
+.todo-item-complete {
+  text-decoration: line-through;
+  opacity: 0.6;
+  transform: scale(0.7);
+}
+
+.todo-item-complete-btn {
+  grid-area: complete;
+}
+
+.todo-item-delete-btn {
+  grid-area: delete;
+}
