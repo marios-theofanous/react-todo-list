@@ -1,6 +1,8 @@
 .todo-item-container {
   display: grid;
-  grid-template-areas: "text complete delete";
+  grid-template-areas:  "text ... ..."
+                        "text complete delete"
+                        "text ... ...";
   grid-template-columns: 99999fr 1fr 1fr;
 }
 
@@ -8,6 +10,8 @@
   grid-area: text;
   transition: transform .2s ease-in-out;
   font-size: x-large;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .todo-item-complete {
